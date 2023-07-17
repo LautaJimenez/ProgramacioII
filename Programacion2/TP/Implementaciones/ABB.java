@@ -15,7 +15,6 @@ public class ABB implements ABBTDA {
   public void inicializarArbol() {
 	  raiz = null;
   } 
-
   
   public void agregarElemento(int x) {
 	  if(raiz == null) {
@@ -33,8 +32,7 @@ public class ABB implements ABBTDA {
 		  raiz.hijoIzquierdo.agregarElemento(x);
 	  }
   } 
-
-  
+ 
   public void eliminarElemento(int x) {
 	  if(raiz != null) {
 		  if(raiz.valor == x && raiz.hijoDerecho.arbolVacio() && raiz.hijoIzquierdo.arbolVacio()) {
@@ -78,17 +76,14 @@ public class ABB implements ABBTDA {
   public int raiz() { 
     return (raiz.valor);
   }
-
   
   public ABBTDA hijoIzquierdo() { 
     return (raiz.hijoIzquierdo);
   }
 
-  
   public ABBTDA hijoDerecho() { 
     return (raiz.hijoDerecho);
   }
-
   
   public boolean arbolVacio() { 
     return (raiz == null);

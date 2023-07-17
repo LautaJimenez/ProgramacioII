@@ -1,4 +1,4 @@
-package TDA;
+ package TDA;
 
 public interface ConjuntoTDA {
   void inicializarConjunto();
